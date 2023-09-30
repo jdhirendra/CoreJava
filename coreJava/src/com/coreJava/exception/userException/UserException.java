@@ -1,4 +1,4 @@
-package com.userExcetion;
+package com.coreJava.exception.userException;
 
 public class UserException extends Exception {
 

@@ -1,4 +1,4 @@
-package com.userExcetion;
+package com.coreJava.exception.userException;
 
 public class ExceptionTest {
 
@@ -6,6 +6,8 @@ public class ExceptionTest {
 		// TODO Auto-generated method stub
 		ExceptionTest et = new ExceptionTest();
 		et.userExcepMethod(et);
+		
+//		et.userExcepMethod(this);
 		
 //		RunTimeUserException rte = new RunTimeUserException("My custom UserException");
 //		et.userRunTimeExcepMethod(rte);
