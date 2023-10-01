@@ -16,6 +16,10 @@ public class StreamTest {
 		Function<Double, Optional<Double>> f2 = number -> Optional.of(Double.valueOf(number));
 
 		List<Double> result = null;
+		
+		result = nos1.stream().map(no -> numberCheck(no)).map(Math::sqrt).collect(Collectors.toList());
+		System.out.println(result);
+		
 		result = nos1.stream().map(no -> numberCheck(f1, no)).filter(Optional::isPresent).map(Optional::get)
 				.map(no -> Math.sqrt(no.get())).collect(Collectors.toList());
 		System.out.println(result);
